@@ -5,7 +5,7 @@ import jwt from 'jsonwebtoken';
  
 
 const app = express();
-const SECRET_KEY = process.env.SECRET_KEY || 'hardcoded-secret-123';
+const SECRET_KEY = process.env.SECRET_KEY;
  
 
 const db = mysql.createConnection({
